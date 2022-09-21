@@ -1,0 +1,12 @@
+.footer {
+  margin-left: 150px;
+  border-top: 1px solid #dedede;
+  p {
+    padding: 30px 0;
+    font-weight: 400;
+    line-height: 19px;
+    @include respond(tab-port) {
+      padding: 15px 0;
+    }
+  }
+}

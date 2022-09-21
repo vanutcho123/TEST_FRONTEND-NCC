@@ -1,0 +1,39 @@
+.wrapper {
+  max-width: 1918px;
+  background: #fff;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.container {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $font;
+  @include respond(mobile) {
+    font-size: 14px;
+  }
+  @include respond(tab-port) {
+    font-size: 15px;
+  }
+}
+.inner {
+  flex: 1;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.active {
+  color: #fff !important;
+}
+.flex-row {
+  display: flex;
+  gap: 16px;
+}

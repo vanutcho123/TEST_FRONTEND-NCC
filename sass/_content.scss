@@ -1,0 +1,102 @@
+.content {
+  margin-bottom: auto;
+  margin-left: 150px;
+  @include respond(mobile) {
+    margin-left: 130px;
+  }
+  &-logo {
+    margin: 20px auto 30px;
+    object-fit: cover;
+    @include respond(tab-port) {
+      width: 250px;
+    }
+    @include respond(mobile) {
+      width: 200px;
+    }
+  }
+
+  &-heading {
+    text-align: center;
+    padding: 38px 269px;
+    background: $gray-color;
+    margin-bottom: 40px;
+
+    @include respond(desktop) {
+      padding: 30px 150px;
+    }
+    @include respond(tab-land) {
+      padding: 30px 100px;
+    }
+    @include respond(tab-port) {
+      padding: 30px 50px;
+    }
+
+    @include respond(mobile) {
+      padding: 10px 20px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      margin-bottom: 18px;
+      @include respond(mobile) {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    p {
+      @include respond(mobile) {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 0 50px;
+    margin-bottom: 218px;
+    @include respond(desktop) {
+      gap: 0 30px;
+    }
+    @include respond(tab-land) {
+      gap: 0 20px;
+    }
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 100px;
+    }
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 18px;
+    @include respond(tab-port) {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+  &-icon {
+    background-size: contain;
+    object-fit: cover;
+  }
+  p {
+    font-weight: 400;
+    line-height: 19px;
+    @include respond(tab-land) {
+      line-height: 16px;
+      font-size: 14px;
+    }
+
+    @include respond(tab-port) {
+      font-size: 14px;
+      line-height: 14px;
+    }
+    @include respond(mobile) {
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
+}
